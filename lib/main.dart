@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      // 👇 Aquí ajustamos la ruta inicial
+      
       initialRoute: '/',
       routes: {
         '/': (context) => const MyHomePage(title: 'Página principal'),
@@ -34,7 +34,7 @@ class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
-
+// crearcion de la pagina principal y dirrecionamiento a la pagina 2
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {

@@ -4,11 +4,11 @@ import 'package:flutter/services.dart' show rootBundle;
 
 class Pagina02 extends StatelessWidget {
   const Pagina02({super.key});
-
+  // archivo a llamar a la carpeta archivo_texto
   Future<String> cargarDescripcion(String archivo) async {
     return await rootBundle.loadString('archivo_texto/$archivo.txt');
   }
-
+  // llamado de la carpeta imagenes
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -44,7 +44,7 @@ class Pagina02 extends StatelessWidget {
               },
             ),
 
-            // -TAB MUJER 
+            // TAB MUJER 
             FutureBuilder(
               future: cargarDescripcion("mujer"),
               builder: (context, snapshot) {
