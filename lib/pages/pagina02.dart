@@ -44,7 +44,7 @@ class Pagina02 extends StatelessWidget {
                     ElevatedButton(
                       child: const Text('Regresar al Home'),
                       onPressed: () {
-                        // Regresa directamente a MyHomePage (ruta '/')
+                        // Regresa directamente a MyHomePage 
                         Navigator.pushNamedAndRemoveUntil(
                             context, '/', (route) => false);
                       },
@@ -72,7 +72,7 @@ class Pagina02 extends StatelessWidget {
                     ElevatedButton(
                       child: const Text('Regresar al Home'),
                       onPressed: () {
-                        // Regresa directamente a MyHomePage (ruta '/')
+                        // Regresa directamente a MyHomePage 
                         Navigator.pushNamedAndRemoveUntil(
                             context, '/', (route) => false);
                       },
